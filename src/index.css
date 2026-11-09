@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Syne:wght@400..800&display=swap');
+
+
+@theme{
+  /* Font families */
+  --font-primary: "Instrument Sans", sans-serif;
+  --font-accent: "Syne", sans-serif;
+
+  /* Brand */
+  --color-brand: #171717;
+
+  /* Backgrounds */
+  --color-background: #171717;
+  --color-surface: #222222;
+  --color-surface-light: #F3F4F6;
+
+  /* Text */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #9CA3AF;
+  --color-text-muted: #D1D1D1;
+
+  /* Borders */
+  --color-border: #4B4B4B;
+}

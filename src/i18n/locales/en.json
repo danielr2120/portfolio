@@ -1,0 +1,35 @@
+
+{
+  "header": {
+    "work": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "brand": {
+      "descriptor": "ENGINEERING · SOFTWARE · DATA",
+      "description": "Developing digital solutions that connect technology, data, and people."
+    },
+    "navigation": {
+      "title": "NAVIGATION",
+      "work": "Projects",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "connect": {
+      "title": "CONNECT",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "email": "Email"
+    },
+    "availability": {
+      "title": "AVAILABILITY",
+      "message": "Available for new projects and collaborations."
+    },
+    "bottom": {
+      "copyright": "All rights reserved.",
+      "location": "Ipiales, Nariño — Colombia"
+    }
+  }
+}

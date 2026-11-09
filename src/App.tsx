@@ -6,24 +6,23 @@ import { ContactPage } from './pages/contact-page'
 import { WorkPage } from './pages/work-page'
 import { Header } from './layout/header'
 import { translations } from './translation'
+import { Footer } from './layout/footer'
 
 function App() {
-  const [language, setLanguage] = useState<'es' | 'en'>('es')
-  const toggleLanguage = () => {
-    setLanguage(language === 'es' ? 'en' : 'es')
-  }
-  const text = translations[language]
+
+
   return (
     <BrowserRouter>
       <div>
       
-        <Header language={language} toggleLanguage={toggleLanguage} text={text}/>
+        <Header/>
         <Routes>
           <Route path='/' element={<WorkPage />} />
           <Route path='/AboutPage' element={<AboutPage />} />
           <Route path='/ContactPage' element={<ContactPage />} />
         </Routes>
-      
+        <Footer />
+
       </div>
     </BrowserRouter>
 
