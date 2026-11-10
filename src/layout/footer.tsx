@@ -30,7 +30,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="mx-10 px-8 pt-12 pb-6 ">
+    <footer className="mx-4 pt-2 border-t border-white/80">
       <div className="bg-background/80">
 
       

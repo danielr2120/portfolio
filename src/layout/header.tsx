@@ -27,10 +27,10 @@ export function Header() {
     setIsOpen(!isOpen)
   }
   return (
-    <header className="sticky top-0 z-20 pt-4 mx-10 mt-4 px-8">
+    <header className="sticky top-0 z-20 pt-4 sm:pt-6 mx-4">
 
       <div className="relative bg-background/80 backdrop-blur-md rounded-3xl border border-border/20 overflow-hidden transition-all duration-300">
-        <div className="flex justify-between items-center font-primary font-medium uppercase h-22">
+        <div className="flex justify-between items-center font-primary font-medium uppercase h-20 sm:h-22">
           <div className="hover:translate-0.5 duration-300 px-8">
             <NavLink to="/">
             <img src={Logo} alt="" className=" w-15"/>
