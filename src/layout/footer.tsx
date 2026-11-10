@@ -22,39 +22,41 @@ export function Footer() {
   };
   return (
     <footer className="mx-10 px-8 pt-12 pb-6">
-      <div className="font-primary bg-background/85 border-t border-white/20">
-        <div className="flex items-center">
+      <div className="grid grid-cols-4 gap-8 font-primary bg-background/85 border-t border-white/20">
+        <div className="">
           <Link to="/">
-          <img src={Logo} alt="" className="w-20"/>
-          <p className="text-7xl font-bold text-text-primary">DR</p>
+          <img src={Logo} alt="" className="w-16"/>
+          <p className="text-2xl font-bold text-text-primary">DR</p>
           </Link>
-          <p className="text-text-primary">{t("footer.brand.descriptor")}</p>
+          <p className="text-text-primary text-sm">{t("footer.brand.descriptor")}</p>
           <p className="text-text-primary">{t("footer.brand.description")}</p>
         </div>
         <div>
           <ul>
-            <h2>{t("footer.navigation.title")}</h2>
+            <h2 className="font-accent font-semibold text-text-primary">{t("footer.navigation.title")}</h2>
             {
               footer.navigation.map((navigation)=>(
               <li>
-                <NavLink to={navigation.to}>
+                <NavLink to={navigation.to} className="font-primary text-text-primary hover:text-text-secondary hover:translate-0.5 duration-300">
                   {navigation.title}
                 </NavLink>
               </li>
               ))
             }
           </ul>
+          </div>
+          <div>
           <ul>
-            <h2>{t("footer.connect.title")}</h2>
+            <h2 className="font-accent font-semibold text-text-primary">{t("footer.connect.title")}</h2>
             {
               footer.connect.map((con)=>{
                 const Logo = con.logo
                 return(
                   <li>
-                  <NavLink to={con.to}>
+                  <a href={con.to} className="font-primary text-text-primary hover:text-text-secondary hover:translate-0.5 duration-300 ">
                     {con.title}
                     <Logo/>
-                  </NavLink>
+                  </a>
                   </li>
                 )
               })
@@ -62,10 +64,13 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h2>{t("footer.availability.title")}</h2>
-          <FaRegCalendarAlt/>
-          <p> {t("footer.availability.message")} </p>
-          
+          <h2 className="font-accent font-semibold text-text-primary">{t("footer.availability.title")}</h2>
+          <div className="font-accent font-semibold text-text-primary">
+            <FaRegCalendarAlt/>
+            <p > {t("footer.availability.message")} </p>
+
+          </div>
+                    
         </div>
       </div>
     </footer>
