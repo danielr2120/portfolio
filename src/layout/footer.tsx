@@ -35,15 +35,15 @@ export function Footer() {
 
       
       <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_2fr_2fr_3fr] gap-3 font-primary sm:gap-8">
-        <div className=" border-r border-white/20">
-          <div className="hover:translate-1 duration-300 mb-1.5">
+        <div className="border-r border-white/20 sm:border-none md:border-none">
+          <div className="hover:translate-1 duration-300 mb-4">
             <Link to="/" className="flex items-center">
               <img src={Logo} alt="" className="w-14"/>
               <p className="text-5xl text-text-primary">DR</p>
             </Link>
           </div>
 
-          <p className="text-text-primary text-xs font-bold">{t("footer.brand.descriptor")}</p>
+          <p className="text-text-primary text-xs font-bold mt-1">{t("footer.brand.descriptor")}</p>
           <p className="text-text-primary text-sm pt-5">{t("footer.brand.description")}</p>
         </div>
 
