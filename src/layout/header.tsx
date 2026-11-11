@@ -36,7 +36,7 @@ export function Header() {
             <img src={Logo} alt="" className=" w-15"/>
             </NavLink>
         </div>
-        <div className="flex items-center gap-4 text-text-primary hover:text-text-secondary hover:translate-0.5 duration-300 px-10 md:hidden">
+        <div className="flex items-center gap-4 text-text-primary hover:text-hover hover:translate-0.5 duration-300 px-10 md:hidden">
             <button
                 onClick={() => i18n.changeLanguage(i18n.language === "es" ? "en" : "es")}
               >
@@ -81,8 +81,8 @@ export function Header() {
                     to={data.path}
                     className={({isActive})=>
                     isActive 
-                    ? "text-text-secondary hover:text-text-secondary font-semibold"
-                    : "text-text-primary hover:text-text-secondary "
+                    ? "text-hover hover:text-hover font-semibold"
+                    : "text-text-primary hover:text-hover "
                   }> 
                     {data.label}
                     </NavLink>
@@ -90,7 +90,7 @@ export function Header() {
                 ))
               }
           </ul>
-          <div className="text-text-primary hover:text-text-secondary hover:translate-0.5 duration-300 px-10">
+          <div className="text-text-primary hover:text-hover hover:translate-0.5 duration-300 px-10">
             <button
               onClick={() => i18n.changeLanguage(i18n.language === "es" ? "en" : "es")}
             >

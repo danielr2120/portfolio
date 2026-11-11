@@ -31,5 +31,22 @@
       "copyright": "Todos los derechos reservados.",
       "location": "Ipiales, Nariño — Colombia"
     }
+  },
+  "contact": {
+    "eyebrow": "CONTACTO",
+    "title": "Hablemos de tu próximo proyecto.",
+    "description": "Las buenas ideas comienzan con una conversación. Cuéntame qué tienes en mente y exploremos cómo hacerlo realidad.",
+    "direct": {
+      "title": "CONTACTO DIRECTO",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp"
+    },
+    "availability": {
+      "title": "DISPONIBILIDAD",
+      "message": "Abierto a nuevos proyectos, ideas y colaboraciones."
+    }
   }
 }

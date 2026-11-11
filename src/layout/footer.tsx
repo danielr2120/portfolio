@@ -30,12 +30,12 @@ export function Footer() {
   }
 
   return (
-    <footer className="mx-4 pt-2 border-t border-white/80">
-      <div className="bg-background/80">
+    <footer className="mx-4 pt-2 mb-4">
+      <div className="bg-background/80 border rounded-3xl">
 
       
       <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[3fr_2fr_2fr_3fr] gap-3 font-primary sm:gap-8">
-        <div className="border-r border-white/20 sm:border-none md:border-none">
+        <div className=" border-white/20 sm:border-r md:border-r">
           <div className="hover:translate-1 duration-300 mb-4">
             <Link to="/" className="flex items-center">
               <img src={Logo} alt="" className="w-14"/>
@@ -53,7 +53,7 @@ export function Footer() {
             {
               footer.navigation.map((navigation)=>(
               <li key={navigation.to}>
-                <NavLink to={navigation.to} className="font-primary text-text-primary hover:text-text-secondary hover:translate-0.5 duration-300 text-lg font-extralight flex">
+                <NavLink to={navigation.to} className="font-primary text-text-primary hover:text-hover hover:translate-0.5 duration-300 text-lg font-extralight flex">
                   {navigation.title}
                 </NavLink>
               </li>
@@ -98,7 +98,7 @@ export function Footer() {
                 const Logo = con.logo
                 return(
                   <li key={con.title}>
-                    <a href={con.to} className="font-primary text-text-primary hover:text-text-secondary hover:translate-0.5 duration-300 flex items-center gap-7 font-light text-sm"
+                    <a href={con.to} className="font-primary text-text-primary hover:text-hover hover:translate-0.5 duration-300 flex items-center gap-7 font-light text-sm"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -129,7 +129,7 @@ export function Footer() {
                 const Logo = con.logo
                 return(
                   <li key={con.title}>
-                    <a href={con.to} className="font-primary text-text-primary hover:text-text-secondary    hover:translate-0.5 duration-300 flex items-center gap-7 font-light text-sm"
+                    <a href={con.to} className="font-primary text-text-primary hover:text-hover hover:translate-0.5 duration-300 flex items-center gap-7 font-light text-sm"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -143,7 +143,7 @@ export function Footer() {
             }
           </ul>
         </div>
-
+ 
 
         <div className="border-t border-white/80 sm:border-none">
           <h2 className="font-accent font-semibold text-text-primary mb-2 mt-2">{t("footer.availability.title")}</h2>

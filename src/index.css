@@ -21,9 +21,9 @@
   --color-text-muted: #9CA3AF;
 
   /* Interactive */
-  --color-hover: #FFFFFF;
-  --color-hover-muted: #D1D1D1;
 
+  --color-hover: #C87945;
+  --color-hover-muted: #B96832;
   /* Borders */
   --color-border: #4B4B4B;
   --color-border-subtle: #FFFFFF20;
@@ -32,6 +32,7 @@
 @layer base {
   body {
     font-family: var(--font-primary);
+    background-color: #F3F3F1
   }
 
   h1, h2, h3, h4, h5, h6 {

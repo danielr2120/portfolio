@@ -2,7 +2,9 @@
 
 export function WorkPage() {
   return (
-    <div>work-page</div>
+    <div className="bg-background">
+
+    </div>
   )
 }
 
