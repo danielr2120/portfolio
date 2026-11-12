@@ -7,7 +7,7 @@ import { Card } from "../components/card";
 
 
 export function ContactPage() {
-  const [t, i18n ] = useTranslation();
+  const [t] = useTranslation();
   const contact = [
     {id:1, href:"https://www.instagram.com/danielr_2120/", logo: FaInstagram , title: t("contact.direct.instagram"), user:"@danielr_2120"},
     {id:2, href:"https://www.linkedin.com/in/danielrevelo2120/", logo: FaLinkedinIn , title: t("contact.direct.linkedin"), user: "/danielrevelo2120"},
