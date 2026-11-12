@@ -14,8 +14,8 @@ export function Footer() {
   const footer = {
     navigation: [
       { to: "/", title: t("footer.navigation.work") },
-      { to: "/AboutPage", title: t("footer.navigation.about") },
-      { to: "/ContactPage", title: t("footer.navigation.contact") }
+      { to: "/about", title: t("footer.navigation.about") },
+      { to: "/contact", title: t("footer.navigation.contact") }
     ],
     connect:[
       {to: "https://github.com/danielr2120", title: t("footer.connect.github"), logo: FaGithub},

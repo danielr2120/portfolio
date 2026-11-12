@@ -15,8 +15,8 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' element={<WorkPage />} />
-          <Route path='/AboutPage' element={<AboutPage />} />
-          <Route path='/ContactPage' element={<ContactPage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Routes>
         <Footer />
 

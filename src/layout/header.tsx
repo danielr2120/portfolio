@@ -14,11 +14,11 @@ export function Header() {
   },
   {
     label:t("header.about"),
-    path:"/AboutPage", 
+    path:"/about", 
   },
   {
     label:t("header.contact"),
-    path:"/ContactPage", 
+    path:"/contact", 
   },
   ]
 
