@@ -46,7 +46,8 @@
     },
     "availability": {
       "title": "DISPONIBILIDAD",
-      "message": "Abierto a nuevos proyectos, ideas y colaboraciones."
+      "heading": "Abierto a nuevas conexiones.",
+      "message": "Proyectos, ideas y colaboraciones."
     }
   }
 }
