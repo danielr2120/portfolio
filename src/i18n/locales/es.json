@@ -49,5 +49,49 @@
       "heading": "Abierto a nuevas conexiones.",
       "message": "Proyectos, ideas y colaboraciones."
     }
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Ingeniero electrónico, analista de datos y desarrollador.",
+    "description": "Combino la ingeniería, el análisis de información y el desarrollo web para crear soluciones digitales que optimicen procesos, faciliten la toma de decisiones y resuelvan necesidades reales.",
+    "details": {
+      "location": {
+        "value": "Ipiales, Nariño",
+        "description": "Colombia"
+      },
+      "specialty": {
+        "value": "Desarrollo",
+        "description": "Ingeniería, datos"
+      },
+      "experience": {
+        "value": "+4 años",
+        "description": "de experiencia profesional"
+      }
+    },
+    "approach": {
+      "title": "Mi enfoque",
+      "description": "Me interesa construir tecnología útil, sencilla y sostenible. Creo que las mejores soluciones nacen de comprender los problemas, analizar las necesidades y encontrar formas prácticas de resolverlos.",
+      "principles": [
+        "Comprender los problemas antes de proponer soluciones.",
+        "Transformar información en conocimiento útil.",
+        "Diseñar herramientas que simplifiquen procesos.",
+        "Aprender, experimentar y mejorar continuamente."
+      ]
+    },
+    "technologies": {
+      "title": "Tecnologías"
+    },
+    "interests": {
+      "title": "Intereses",
+      "items": [
+        "Astrofotografía y astronomía",
+        "Tecnología e innovación",
+        "Entrenamiento y actividad física",
+        "Lectura y aprendizaje continuo",
+        "Finanzas e inversión",
+        "Naturaleza y exploración"
+      ]
+    }
   }
 }
+

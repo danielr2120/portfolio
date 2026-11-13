@@ -49,5 +49,48 @@
       "heading": "Open to new connections.",
       "message": "Projects, ideas and collaborations."
     }
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Electronic engineer, data analyst and developer.",
+    "description": "I combine engineering, data analysis and web development to create digital solutions that optimize processes, support decision-making and address real-world needs.",
+    "details": {
+      "location": {
+        "value": "Ipiales, Nariño",
+        "description": "Colombia"
+      },
+      "specialty": {
+        "value": "Development",
+        "description": "Engineering, data and web development"
+      },
+      "experience": {
+        "value": "4+ years",
+        "description": "of professional experience"
+      }
+    },
+    "approach": {
+      "title": "My approach",
+      "description": "I'm interested in building useful, simple and sustainable technology. I believe the best solutions come from understanding problems, analyzing needs and finding practical ways to solve them.",
+      "principles": [
+        "Understand problems before proposing solutions.",
+        "Turn information into useful knowledge.",
+        "Design tools that simplify processes.",
+        "Keep learning, experimenting and improving."
+      ]
+    },
+    "technologies": {
+      "title": "Technologies"
+    },
+    "interests": {
+      "title": "Interests",
+      "items": [
+        "Astrophotography and astronomy",
+        "Technology and innovation",
+        "Training and fitness",
+        "Reading and continuous learning",
+        "Finance and investing",
+        "Nature and exploration"
+      ]
+    }
   }
 }

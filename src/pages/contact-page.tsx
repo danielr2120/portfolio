@@ -19,7 +19,7 @@ export function ContactPage() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[4fr_6fr] mx-2 mt-5 px-4 lg:px-8 gap-8 lg:gap-10">
       <section>
         <div className="flex flex-col mb-10">
-          <p className="uppercase font-medium text-sm mb-6 flex items-center after:ml-4 after:h-px after:flex-1 after:bg-background/30 after:max-w-25"> {t("contact.eyebrow")} </p>
+          <p className="uppercase font-bold text-sm mb-6 flex items-center after:ml-4 after:h-px after:flex-1 after:bg-background/30 after:max-w-25"> {t("contact.eyebrow")} </p>
           <h1 className="text-4xl font-bold max-w-137 mb-5 leading-[1.05] lg:text-5xl"> {t("contact.title")} </h1>
           <p className="font-light text-lg max-w-135 leading-[1.05]"> {t("contact.description")} </p>
         </div>
