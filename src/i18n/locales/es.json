@@ -70,13 +70,7 @@
     },
     "approach": {
       "title": "Mi enfoque",
-      "description": "Me interesa construir tecnología útil, sencilla y sostenible. Creo que las mejores soluciones nacen de comprender los problemas, analizar las necesidades y encontrar formas prácticas de resolverlos.",
-      "principles": [
-        "Comprender los problemas antes de proponer soluciones.",
-        "Transformar información en conocimiento útil.",
-        "Diseñar herramientas que simplifiquen procesos.",
-        "Aprender, experimentar y mejorar continuamente."
-      ]
+      "description": "Me interesa construir tecnología útil, sencilla y sostenible. Creo que las mejores soluciones nacen de comprender los problemas, analizar las necesidades y encontrar formas prácticas de resolverlos."
     },
     "technologies": {
       "title": "Tecnologías"

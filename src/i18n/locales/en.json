@@ -70,13 +70,7 @@
     },
     "approach": {
       "title": "My approach",
-      "description": "I'm interested in building useful, simple and sustainable technology. I believe the best solutions come from understanding problems, analyzing needs and finding practical ways to solve them.",
-      "principles": [
-        "Understand problems before proposing solutions.",
-        "Turn information into useful knowledge.",
-        "Design tools that simplify processes.",
-        "Keep learning, experimenting and improving."
-      ]
+      "description": "I'm interested in building useful, simple and sustainable technology. I believe the best solutions come from understanding problems, analyzing needs and finding practical ways to solve them."
     },
     "technologies": {
       "title": "Technologies"
