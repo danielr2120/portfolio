@@ -36,7 +36,7 @@ export function AboutPage() {
             <p className="font-light text-lg max-w-160 leading-[1.05] text-"> {t("about.description")} </p>
           </div>
            <div className="flex flex-col mb-5 items-star">
-            <ul className="grid grid-cols-3 gap-2 mx-4 min-w-0 divide-x divide-border/20">
+            <ul className="grid lg:grid-cols-3 gap-2 mx-4 min-w-0 divide-x divide-border/20">
               {about.map((about)=>{
                  const Logo = about.logo
                  return(
@@ -57,9 +57,9 @@ export function AboutPage() {
           <img src={About_Photo} alt="" className=" rounded-2xl object-cover w-full h-full"/>
         </section>
       </div>
-      <div className="grid grid-cols-[1fr_1.25fr_1fr] gap-6 py-4 w-full">
+      <div className="lg:grid grid-cols-[1fr_1.25fr_1fr] gap-6 py-4 w-full">
 
-        <section className="flex flex-col py-4 border-r border-border/30 gap-4 ">
+        <section className="flex flex-col py-4 border-none sm:border-none lg:border-r lg:border-border/30 gap-4 ">
 
           <h2 className="font-semibold uppercase leading-[1.05]">{t('about.approach.title')}</h2>
           <p className="font-extralight text-sm max-w-[80%]">{t('about.approach.description')}</p>
