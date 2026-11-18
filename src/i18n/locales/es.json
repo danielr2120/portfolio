@@ -52,7 +52,7 @@
   },
   "about": {
     "eyebrow": "Sobre mí",
-    "title": "Ingeniero electrónico, analista de datos y desarrollador.",
+    "title": "Ingeniero electrónico, analista de datos y desarrollador de soluciones digitales.",
     "description": "Combino la ingeniería, el análisis de información y el desarrollo web para crear soluciones digitales que optimicen procesos, faciliten la toma de decisiones y resuelvan necesidades reales.",
     "details": {
       "location": {
@@ -61,7 +61,7 @@
       },
       "specialty": {
         "value": "Desarrollo",
-        "description": "Ingeniería, datos"
+        "description": "Ingeniería, datos y aplicaciones web"
       },
       "experience": {
         "value": "+4 años",

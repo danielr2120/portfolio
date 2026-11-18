@@ -16,7 +16,7 @@ export function ContactPage() {
     {id:5, href:"https://github.com/danielr2120", logo: FaGithub , title: t("contact.direct.github"), user: "/danielr2120"},
   ]
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[4fr_6fr] mx-2 mt-5 px-4 lg:px-8 gap-8 lg:gap-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[4fr_6fr] mx-2 mt-5 px-4 xl:px-12 lg:px-10 gap-8 lg:gap-10">
       <section>
         <div className="flex flex-col mb-10">
           <p className="uppercase font-bold text-sm mb-6 flex items-center after:ml-4 after:h-px after:flex-1 after:bg-background/30 after:max-w-25"> {t("contact.eyebrow")} </p>

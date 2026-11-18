@@ -1,20 +1,19 @@
 
 import { useTranslation } from "react-i18next";
-import { MdOutlineLocationOn } from "react-icons/md";
-import { IoIosLaptop } from "react-icons/io";
-import { RiStackLine } from "react-icons/ri";
+import { MapPin, Laptop, Layers } from "lucide-react";
 import { FaReact, FaPython , FaDatabase } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
 import { BsTypescript } from "react-icons/bs";
 import { RiTailwindCssFill } from "react-icons/ri";
+import About_Photo from "../assets/moon2.jpg"
 
 export function AboutPage() {
 
   const [t] = useTranslation()
   const about = [
-    {id:1 , value:t('about.details.location.value'),description:t('about.details.location.description'), logo: MdOutlineLocationOn }, 
-    {id:2 , value:t('about.details.specialty.value'),description:t('about.details.specialty.description'), logo: IoIosLaptop }, 
-    {id:3 , value:t('about.details.experience.value'),description:t('about.details.experience.description'), logo: RiStackLine }, 
+    {id:1 , value:t('about.details.location.value'),description:t('about.details.location.description'), logo: MapPin }, 
+    {id:2 , value:t('about.details.specialty.value'),description:t('about.details.specialty.description'), logo: Laptop }, 
+    {id:3 , value:t('about.details.experience.value'),description:t('about.details.experience.description'), logo: Layers }, 
   ]
   const logos = [
     {id: 4, logo: FaReact}, 
@@ -28,24 +27,24 @@ export function AboutPage() {
   const items = t("about.interests.items", { returnObjects: true }) as string[];
 
   return (
-    <div className="flex flex-col mx-2 mt-5 px-4 lg:px-8 gap-8 lg:gap-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[4fr_6fr] ">
-        <section>
+    <div className="flex flex-col mx-2 mt-5 px-4 xl:px-12 lg:px-8 gap-10 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[55fr_45fr] gap-8">
+        <section className="">
           <div className="flex flex-col mb-10">
-            <p className="uppercase font-bold text-sm mb-6 flex items-center after:ml-4 after:h-px after:flex-after:bg-background/30 after:max-w-25"> {t("about.eyebrow")} </p>
-            <h1 className="text-4xl font-bold max-w-137 mb-5 leading-[1.05] lg:text-5xl"> {t("about.title")} </h1>
-            <p className="font-light text-lg max-w-135 leading-[1.05] text-"> {t("about.description")} </p>
+            <p className="uppercase font-bold max-w-190 text-sm mb-6 flex items-center after:ml-4 after:h-px after:flex-1 after:bg-background/30 after:max-w-25"> {t("about.eyebrow")} </p>
+            <h1 className="text-4xl max-w-180 font-bold mb-5 leading-[1.05] lg:text-5xl"> {t("about.title")} </h1>
+            <p className="font-light text-lg max-w-160 leading-[1.05] text-"> {t("about.description")} </p>
           </div>
-           <div className="flex flex-col mb-5">
-            <ul className="grid grid-cols-3">
+           <div className="flex flex-col mb-5 items-star">
+            <ul className="grid grid-cols-3 gap-2 mx-4 min-w-0 divide-x divide-border/20">
               {about.map((about)=>{
                  const Logo = about.logo
                  return(
-                   <li key={about.id} className="border-r border-border/30 max-w-90 flex items-center">
-                    <Logo className="h-full w-[20%]"/>
-                    <div className="flex flex-col">
-                      <span> {about.value} </span>
-                      <span> {about.description} </span>
+                   <li key={about.id} className="flex items-center gap-4 mx-3">
+                    <Logo className="size-8 shrink-0"/>
+                    <div className="flex flex-col min-w-0">
+                      <span className="font-bold text-lg"> {about.value} </span>
+                      <span className="font-light text-sm"> {about.description} </span>
                     </div>
 
                   </li>
@@ -55,25 +54,29 @@ export function AboutPage() {
           </div> 
         </section>
         <section>
-
+          <img src={About_Photo} alt="" className=" rounded-2xl object-cover w-full h-full"/>
         </section>
       </div>
-      <div className="grid grid-cols-[1fr_1.25fr_1fr] gap-6 px-6 py-4">
-        <section className="border-r border-border/30">
-          <h2 className="font-semibold uppercase mb-4 leading-[1.05]">{t('about.approach.title')}</h2>
+      <div className="grid grid-cols-[1fr_1.25fr_1fr] gap-6 py-4 w-full">
+
+        <section className="flex flex-col py-4 border-r border-border/30 gap-4 ">
+
+          <h2 className="font-semibold uppercase leading-[1.05]">{t('about.approach.title')}</h2>
           <p className="font-extralight text-sm max-w-[80%]">{t('about.approach.description')}</p>
+
         </section>
-        <section className="flex flex-col border-r border-border/30 gap-6">
+
+        <section className="flex flex-col border-r border-border/30 gap-6 py-4">
           
           <h2 className="text-left font-semibold uppercase">{t('about.technologies.title')}</h2>
-          <div className="flex items-center justify-center">
-            <ul className="flex gap-8">
+          <div className="flex items-center mr-6 justify-center">
+            <ul className="flex gap-6 p-0">
               {logos.map((logos)=>{
                 const Logo = logos.logo
                 return(
-                  <div className="bg-text-secondary/30  p-3 rounded-xl">
-                    <li key={logos.id}>
-                      <Logo className="size-8"/>
+                  <div className="bg-text-secondary/30 p-3 rounded-xl hover:bg-hover/30 hover:translate-1 duration-300 ">
+                    <li key={logos.id} className="">
+                      <Logo className="size-8 hover:rotate-360 transition-transform duration-500"/>
                     </li>
                   </div>
                 )
@@ -82,14 +85,16 @@ export function AboutPage() {
           </div>
 
         </section>
-        <section className="mx-4 mb-5">
+
+        <section className=" py-4">
+          
           <h2 className="font-semibold uppercase mb-4">{t('about.interests.title')}</h2>
           <div className="">
             <ul className="flex flex-wrap gap-3">
               {
                 items.map((item)=>{
                   return(
-                    <li className="border border-border rounded-3xl text-sm font-light">
+                    <li className="p-2 border border-border rounded-3xl text-sm font-light">
                       <p>{item}</p>
                     </li>
                   )

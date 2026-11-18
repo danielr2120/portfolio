@@ -52,7 +52,7 @@
   },
   "about": {
     "eyebrow": "About me",
-    "title": "Electronic engineer, data analyst and developer.",
+    "title": "Electronic Engineer, Data Analyst, and Digital Solutions Developer.",
     "description": "I combine engineering, data analysis and web development to create digital solutions that optimize processes, support decision-making and address real-world needs.",
     "details": {
       "location": {
@@ -61,7 +61,7 @@
       },
       "specialty": {
         "value": "Development",
-        "description": "Engineering, data and web development"
+        "description": "Engineering, data and web apps"
       },
       "experience": {
         "value": "4+ years",
