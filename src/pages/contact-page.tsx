@@ -20,8 +20,8 @@ export function ContactPage() {
       <section>
         <div className="flex flex-col mb-10">
           <p className="uppercase font-bold text-sm mb-6 flex items-center after:ml-4 after:h-px after:flex-1 after:bg-background/30 after:max-w-25"> {t("contact.eyebrow")} </p>
-          <h1 className="text-4xl font-bold max-w-137 mb-5 leading-[1.05] lg:text-5xl"> {t("contact.title")} </h1>
-          <p className="font-light text-lg max-w-135 leading-[1.05]"> {t("contact.description")} </p>
+          <h1 className="text-4xl font-bold max-w-137 mb-5 leading-[1.05] lg:text-5xl xl:max-w-2xl"> {t("contact.title")} </h1>
+          <p className="font-light text-lg max-w-135 leading-[1.05] xl:max-w-2xñ"> {t("contact.description")} </p>
         </div>
         <div className="flex flex-col mb-5">
           <h2 className="uppercase font-bold mb-4"> {t("contact.direct.title")} </h2>
@@ -29,7 +29,7 @@ export function ContactPage() {
             {contact.map((list)=>{
               const Logo = list.logo
               return(
-                <li key={list.id} className="border-b border-border/30 lg:max-w-90">
+                <li key={list.id} className="border-b border-border/30 lg:max-w-90 xl:max-w-130">
                   <a href={list.href} target="_blank" className="flex items-center gap-5 py-1 hover:text-hover duration-300 group">
                     <Logo className=""/>
                     <div className="flex-1">
