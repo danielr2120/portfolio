@@ -36,17 +36,16 @@ export function AboutPage() {
             <p className="font-light text-lg max-w-160 leading-[1.05] text-"> {t("about.description")} </p>
           </div>
            <div className="flex flex-col mb-5 items-star">
-            <ul className="grid lg:grid-cols-3 gap-2 mx-4 min-w-0 divide-x divide-border/20">
+            <ul className="grid gap-2 mx-4 min-w-0 divide-y xl:grid-cols-3 xl:divide-y-0 xl:divide-x divide-border/20">
               {about.map((about)=>{
                  const Logo = about.logo
                  return(
-                   <li key={about.id} className="flex items-center gap-4 mx-3">
-                    <Logo className="size-8 shrink-0"/>
+                   <li key={about.id} className="flex items-center gap-4 mx-3 py-4">
+                    <Logo className="md:size-4 lg:size-6 xl:size-8 shrink-0"/>
                     <div className="flex flex-col min-w-0">
                       <span className="font-bold text-lg"> {about.value} </span>
                       <span className="font-light text-sm"> {about.description} </span>
                     </div>
-
                   </li>
                  )
               })}
@@ -59,24 +58,24 @@ export function AboutPage() {
       </div>
       <div className="lg:grid grid-cols-[1fr_1.25fr_1fr] gap-6 py-4 w-full">
 
-        <section className="flex flex-col py-4 border-none sm:border-none lg:border-r lg:border-border/30 gap-4 ">
+        <section className="flex flex-col py-4 border-b border-border/30 gap-4 lg:border-r lg:border-b-0">
 
           <h2 className="font-semibold uppercase leading-[1.05]">{t('about.approach.title')}</h2>
           <p className="font-extralight text-sm max-w-[80%]">{t('about.approach.description')}</p>
 
         </section>
 
-        <section className="flex flex-col border-r border-border/30 gap-6 py-4">
+        <section className="flex flex-col  gap-6 py-4 border-b border-border/30 lg:border-r  lg:border-b-0">
           
           <h2 className="text-left font-semibold uppercase">{t('about.technologies.title')}</h2>
           <div className="flex items-center mr-6 justify-center">
-            <ul className="flex gap-6 p-0">
+            <ul className="grid grid-cols-3 md:flex   lg:flex gap-6 p-0">
               {logos.map((logos)=>{
                 const Logo = logos.logo
                 return(
                   <div className="bg-text-secondary/30 p-3 rounded-xl hover:bg-hover/30 hover:translate-1 duration-300 ">
                     <li key={logos.id} className="">
-                      <Logo className="size-8 hover:rotate-360 transition-transform duration-500"/>
+                      <Logo className="size-6 lg:size-8 hover:rotate-360 transition-transform duration-500"/>
                     </li>
                   </div>
                 )
@@ -85,7 +84,7 @@ export function AboutPage() {
           </div>
 
         </section>
-
+ 
         <section className=" py-4">
           
           <h2 className="font-semibold uppercase mb-4">{t('about.interests.title')}</h2>

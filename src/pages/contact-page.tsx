@@ -29,14 +29,13 @@ export function ContactPage() {
             {contact.map((list)=>{
               const Logo = list.logo
               return(
-                <li key={list.id} className="border-b border-border/30 max-w-90">
+                <li key={list.id} className="border-b border-border/30 lg:max-w-90">
                   <a href={list.href} target="_blank" className="flex items-center gap-5 py-1 hover:text-hover duration-300 group">
                     <Logo className=""/>
                     <div className="flex-1">
                       <p className="font-bold">{list.title}</p>
                       <p className="font-extralight text-sm">{list.user}</p>
                     </div>
-
                     <LuArrowUpRight className="ml-auto group-hover:translate-1 group-hover:-translate-y-1 ease-out duration-300 group-hover:scale-120"/>
                   </a>
                 </li>
